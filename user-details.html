@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details - My Fitness AI</title>
+    <link rel="stylesheet" href="Css/style.css">
+</head>
+<body class="details-body">
+    
+    <img src="assets/muscular man.png" class="background-icon">
+
+    <div class="title-box">
+        <h1>Your Personal Details!</h1>
+    </div>
+
+    <div class="form-container">
+     
+        <div class="form-logo">
+            <img src="assets/logo.png" alt="My Fitness AI Logo">
+        </div>
+
+        <p class="subheading2">Please input your details below:</p>
+
+        <form id="userDetailsForm">
+            <input type="number" id="age" placeholder="Age" required>
+            <select id="gender" required>
+                <option value="" disabled selected>Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <input type="number" id="weight" placeholder="Weight (kg)" required>
+            <input type="number" id="height" placeholder="Height (cm)" required>
+
+            <p id="detailsMessage"></p>
+
+            <button type="submit" class="details-btn">Proceed</button>
+        </form>
+    </div>
+
+    <script src="Js/script.js"></script>
+</body>
+</html>
