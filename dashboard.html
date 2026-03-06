@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>User Dashboard</title>
+  <link rel="stylesheet" href="Css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+</head>
+
+<body class="dashboard-body">
+
+  <div class="dashboard-container">
+
+    <div class="sidebar">
+      <div class="profile-header">
+        <h2><span style="font-size: 1.5em;">👤</span> My Profile</h2>
+         </div>
+         
+         <img src="assets/logo.png" alt="Logo" class="profile-logo">
+
+      <h1 id="name" class="profile-name">Loading...</h1>
+      <p id="ageLine">Loading...</p>
+      <p id="genderLine">Loading...</p>
+      <p id="weightLine">Loading...</p>
+      <p id="heightLine">Loading...</p>
+      <button onclick="logout()" class="logout-btn">Logout</button>
+    </div>
+
+    <div class="dashboard-content">
+      <h3>Progress Tracker</h3>
+      <img src="assets/progress-chart.png" alt="Progress Graph" class="progress-graph">
+
+      <h3>Your Workouts</h3>
+      <div id="workout-gallery" class="dashboard-workouts">
+        <p>Loading your AI workout...</p>
+      </div>
+    </div>
+
+  </div>
+  <script src="Js/script.js"></script>
+  
+</body>
+</html>
